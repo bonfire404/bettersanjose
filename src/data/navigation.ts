@@ -177,7 +177,7 @@ export const footerNavigation = {
     },
     {
       label: 'GitHub',
-      href: 'https://github.com/BetterLosBanos/bettersj',
+      href: 'https://github.com/bonfire404/bettersanjose',
       target: '_blank',
     },
   ],

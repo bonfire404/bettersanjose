@@ -20,8 +20,8 @@ NC='\033[0m' # No Color
 
 # Configuration
 MIGRATIONS_DIR="db/migrations"
-DB_BINDING="BETTERLB_DB"
-DB_NAME="betterlb_openlgu"
+DB_BINDING="BETTERSJ_DB"
+DB_NAME="bettersj_openlgu"
 WRANGLER_CMD="npx wrangler d1 execute"
 
 # Functions

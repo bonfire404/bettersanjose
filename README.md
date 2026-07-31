@@ -2,7 +2,7 @@
 
 A community-led, open-source portal designed to make the government of the **Municipality of San Jose de Buenavista, Antique** accessible, transparent, and user-friendly.
 
-This project is a municipal-focused civic portal for San Jose de Buenavista, Antique, built to empower citizens with easy access to municipal services, transparency data, and local governance information.
+This project is a municipal-focused civic portal for San Jose de Buenavista, Antique, built by [Bonfire Base Studio](https://bonfire.base69.studio) to empower citizens with easy access to municipal services, transparency data, and local governance information.
 
 ---
 ### Inspirations
@@ -247,3 +247,4 @@ BetterSJ aggregates data from multiple sources:
 
 - **Website**: https://bettersj.org
 - **GitHub Repository**: [github.com/bonfire404/bettersanjose](https://github.com/bonfire404/bettersanjose)
+- **Developer**: Built by [Bonfire Base Studio](https://bonfire.base69.studio)

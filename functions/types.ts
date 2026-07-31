@@ -5,7 +5,8 @@ export interface Env {
   BROWSER_KV: KVNamespace;
 
   // D1 Database
-  BETTERLB_DB: D1Database;
+  BETTERSJ_DB: D1Database;
+  BETTERLB_DB: D1Database; // Alias for backward compatibility
   DB: D1Database; // Legacy name for backward compatibility
 
   // Environment variables

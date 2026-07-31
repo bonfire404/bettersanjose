@@ -129,7 +129,7 @@
       "classification": "Simple",
       "type_of_transaction": "G2B",
       "who_may_avail": "Business Owners/ Establishments",
-      "website": "https://ebosslosbanos.com",
+      "website": "https://sanjosedebuenavista.gov.ph",
       "requirements": [
         {
           "requirement": "Copy of DTI Registration (if",
@@ -183,7 +183,7 @@
       "client_steps": [
         {
           "step": 1,
-          "action": "Go to ebosslosbanos.com and Complete the application process",
+          "action": "Go to sanjosedebuenavista.gov.ph and Complete the application process",
           "sub_steps": [
             {
               "letter": "A",
@@ -476,7 +476,7 @@
               "letter": "B",
               "action": "If business has been inspected and inspection report has been duly signed by the inspectors, applicant can now proceed on the online application",
               "details": [
-                "Visit ebosslosbanos.com",
+                "Visit sanjosedebuenavista.gov.ph",
                 "If with credentials, log in",
                 "If no credentials, create an account"
               ]
@@ -575,7 +575,7 @@
         },
         "note": "A processor will determine applicable documents based on your specific situation"
       },
-      "website": "https://ebosslosbanos.com",
+      "website": "https://sanjosedebuenavista.gov.ph",
       "turnaround_time": ", released 2 day",
       "plain_language_name": "Get Business Registration - Online"
     },

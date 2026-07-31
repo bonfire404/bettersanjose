@@ -464,7 +464,7 @@
             "letter": "B",
             "action": "If business has been inspected and inspection report has been duly signed by the inspectors, applicant can now proceed on the online application",
             "details": [
-              "Visit ebosslosbanos.com",
+              "Visit sanjosedebuenavista.gov.ph",
               "If with credentials, log in",
               "If no credentials, create an account"
             ]
@@ -515,7 +515,7 @@
         ]
       }
     ],
-    "website": "https://ebosslosbanos.com",
+    "website": "https://sanjosedebuenavista.gov.ph",
     "fees": {
       "amount": "Based on Schedule of Business Taxes and Other Fees",
       "description": "per annum"

@@ -136,7 +136,7 @@ export default function TransparencyIndex() {
               know.
             </p>
             <a
-              href='https://github.com/BetterLosBanos/bettersj/issues'
+              href='https://github.com/bonfire404/bettersanjose/issues'
               target='_blank'
               rel='noreferrer'
               className='text-kapwa-text-inverse bg-kapwa-brand-600 hover:bg-kapwa-brand-700 inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-xs font-bold transition-colors'

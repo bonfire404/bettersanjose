@@ -1,5 +1,5 @@
 {
-  "name": "betterlb",
+  "name": "bettersj",
   "pages_build_output_dir": "dist",
   "compatibility_date": "2026-01-13",
   "kv_namespaces": [
@@ -10,15 +10,15 @@
   ],
   "d1_databases": [
     {
-      "binding": "BETTERLB_DB",
-      "database_name": "betterlb_openlgu",
+      "binding": "BETTERSJ_DB",
+      "database_name": "bettersj_openlgu",
       "database_id": "67f71e98-fece-4460-b3b6-40f6f8742d89",
       "migrations_dir": "db/migrations",
       "remote": true
     }
   ],
   "vars": {
-    "GITHUB_REPO": "BetterLosBanos/betterlb",
+    "GITHUB_REPO": "bonfire404/bettersanjose",
     "GITHUB_CLIENT_ID": "__GITHUB_CLIENT_ID__",
     "GITHUB_CLIENT_SECRET": "__GITHUB_CLIENT_SECRET__",
     "GOOGLE_CLIENT_ID": "__GOOGLE_CLIENT_ID__",

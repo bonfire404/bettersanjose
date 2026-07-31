@@ -111,7 +111,15 @@ export const Footer: FC = () => {
           </p>
           <div className='flex gap-6'>
             <a
-              href='https://github.com/BetterLosBanos/bettersj'
+              href='https://bonfire.base69.studio'
+              target='_blank'
+              rel='noreferrer'
+              className='text-[10px] font-bold tracking-widest text-kapwa-text-disabled uppercase hover:text-kapwa-text-inverse'
+            >
+              Built by Bonfire Base Studio
+            </a>
+            <a
+              href='https://github.com/bonfire404/bettersanjose'
               target='_blank'
               rel='noreferrer'
               className='text-[10px] font-bold tracking-widest text-kapwa-text-disabled uppercase hover:text-kapwa-text-inverse'

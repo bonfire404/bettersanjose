@@ -26,9 +26,9 @@ from typing import List, Dict, Any, Set, Tuple
 
 
 # Database configuration
-DB_NAME = "BETTERLB_DB"
+DB_NAME = "BETTERSJ_DB"
 LOCAL_DB_PATH = ".wrangler/state/v3/d1/miniflare-D1DatabaseObject"
-REMOTE_DB_NAME = "betterlb_openlgu"
+REMOTE_DB_NAME = "bettersj_openlgu"
 
 
 def get_local_db_path() -> str:

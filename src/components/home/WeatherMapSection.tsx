@@ -65,8 +65,8 @@ export default function WeatherMapSection() {
       try {
         setLoading(true);
         const data = await fetchWeatherData(); // WeatherData[]
-        const losBanos = data[0]; // Only 1 city
-        setWeather(losBanos);
+        const cityWeather = data[0]; // Only 1 city
+        setWeather(cityWeather);
       } catch (err: unknown) {
         setError(
           err instanceof Error ? err.message : 'Failed to fetch weather data'
