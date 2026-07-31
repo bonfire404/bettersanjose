@@ -5,14 +5,19 @@ A community-led, open-source portal designed to make the government of the **Mun
 This project is a municipal-focused civic portal for San Jose de Buenavista, Antique, built by [Bonfire Base Studio](https://bonfire.base69.studio) to empower citizens with easy access to municipal services, transparency data, and local governance information.
 
 ---
-### Inspirations
 
-- BetterGov.PH https://github.com/bettergovph/bettergov
-- BetterSolano.org https://github.com/BetterSolano/bettersolano
-- Betterlocalgov https://github.com/iyanski/betterlocalgov
+## Inspirations
 
-### Portal Features
+- [BetterGov.PH](https://github.com/bettergovph/bettergov)
+- [BetterSolano.org](https://github.com/BetterSolano/bettersolano)
+- [Betterlocalgov](https://github.com/iyanski/betterlocalgov)
+
+---
+
+## Portal Features
+
 BetterSJ provides San Jose de Buenavista with:
+
 - **Public Services Directory**: Comprehensive guide to municipal services with requirements, fees, and step-by-step processes
 - **Legislative Portal**: Access to ordinances, resolutions, and executive orders from the Sangguniang Bayan
 - **Transparency Dashboard**: Financial data, procurement bids, and infrastructure projects
@@ -36,7 +41,7 @@ BetterSJ is designed to be easily adapted for any Local Government Unit (LGU) in
 ### Configuration Files to Edit
 
 | File | What to Change |
-|------|------------------|
+| --- | --- |
 | `/config/lgu.config.json` | All LGU settings (name, province, coordinates, branding, transparency config) |
 | `/public/locales/en/common.json` | UI text strings (hero title, footer copyright, government section) |
 | `/src/data/directory/departments.json` | Municipal departments and offices |
@@ -46,37 +51,38 @@ BetterSJ is designed to be easily adapted for any Local Government Unit (LGU) in
 ### Key Configuration Fields
 
 | Field | Description | Example (San Jose, Antique) |
-|-------|-------------|---------------------|
+| --- | --- | --- |
 | `lgu.name` | Short municipality name | "San Jose" |
 | `lgu.fullName` | Full official name | "Municipality of San Jose de Buenavista" |
 | `lgu.province` | Province name | "Antique" |
 | `lgu.region` | Region name | "Region VI" |
 | `lgu.regionCode` | Region code | "WESTERN VISAYAS" |
 | `lgu.type` | LGU type | "municipality" or "city" |
-| `lgu.officialWebsite` | Official LGU website | "https://sanjosedebuenavista.gov.ph" |
+| `lgu.officialWebsite` | Official LGU website | "[sanjosedebuenavista.gov.ph](https://sanjosedebuenavista.gov.ph)" |
 | `portal.name` | Portal name | "BetterSJ" |
-| `portal.baseUrl` | Portal base URL | "https://bettersj.org" |
+| `portal.baseUrl` | Portal base URL | "[bettersj.org](https://bettersj.org)" |
 | `portal.tagline` | Portal tagline | "Community Powered San Jose, Antique Portal" |
 
 **Note:** See [`FORKING.md`](./FORKING.md) for comprehensive forking instructions including database setup for legislative data.
 
 ## Technical Stack
-*   **Frontend**: React 19, Vite, TypeScript (Strict mode)
-*   **Styling**: Tailwind CSS v4 (CSS variables, high-contrast tokens)
-*   **Backend**: Cloudflare Pages Functions (TypeScript)
-*   **Data**: Structured JSON (Modular category-based architecture)
-*   **Search**: Meilisearch with Fuse.js fuzzy search
-*   **Localization**: i18next with English & Filipino support
-*   **Maps**: Leaflet for geospatial visualizations
-*   **Data Pipeline**: Python scripts for legislative document processing
-*   **Testing**: Playwright (E2E tests across multiple browsers)
-*   **Code Quality**: ESLint, Prettier, Husky pre-commit hooks
+
+- **Frontend**: React 19, Vite, TypeScript (Strict mode)
+- **Styling**: Tailwind CSS v4 (CSS variables, high-contrast tokens)
+- **Backend**: Cloudflare Pages Functions (TypeScript)
+- **Data**: Structured JSON (Modular category-based architecture)
+- **Search**: Meilisearch with Fuse.js fuzzy search
+- **Localization**: i18next with English & Filipino support
+- **Maps**: Leaflet for geospatial visualizations
+- **Data Pipeline**: Python scripts for legislative document processing
+- **Testing**: Playwright (E2E tests across multiple browsers)
+- **Code Quality**: ESLint, Prettier, Husky pre-commit hooks
 
 ---
 
 ## Project Structure
 
-```
+```text
 bettersanjose/
 ├── e2e/                         # End-to-end tests
 │   └── utils/                   # Test helpers and shared testing logic
@@ -131,6 +137,7 @@ bettersanjose/
 ```
 
 ### Key Components
+
 - **Service Directory**: Categorized services from `src/data/services/categories/`
 - **Legislative Portal**: Ordinances, resolutions, executive orders with document parsing
 - **Transparency Portal**: Financial data, procurement, bids, infrastructure projects
@@ -142,7 +149,7 @@ bettersanjose/
 BetterSJ includes structured data for San Jose de Buenavista:
 
 | Data Type | Location | Description |
-|-----------|----------|-------------|
+| --- | --- | --- |
 | **Departments** | `/src/data/directory/departments.json` | Municipal departments and offices with contact info |
 | **Barangays** | `/src/data/directory/barangays.json` | Barangay profiles and officials |
 | **Services** | `/src/data/services/categories/*.json` | Public services by category (BPLO, Assessor, Engineering, etc.) |
@@ -155,6 +162,7 @@ BetterSJ includes structured data for San Jose de Buenavista:
 ## 🚀 How to Run Locally
 
 ### 1. Clone and Install
+
 ```bash
 git clone https://github.com/bonfire404/bettersanjose.git
 cd bettersanjose
@@ -162,18 +170,23 @@ npm install
 ```
 
 ### 2. Prepare Data
+
 Since the service directory is split into manageable category files, you must merge them before running the app:
+
 ```bash
 python3 scripts/merge_services.py
 ```
 
 ### 3. Start Development Server
+
 ```bash
 npm run dev
 ```
+
 **Access the portal at:** `http://localhost:5173`
 
 ### 4. Running Tests
+
 ```bash
 npm run test:e2e        # Run all end-to-end tests
 npm run lint            # Check code quality (max warnings = 0)
@@ -181,6 +194,7 @@ npm run format          # Format code with Prettier
 ```
 
 ### 5. Building for Production
+
 ```bash
 npm run build           # Combines merge_services, TypeScript, and Vite build
 ```
@@ -190,14 +204,17 @@ npm run build           # Combines merge_services, TypeScript, and Vite build
 ## 🏛️ San Jose de Buenavista Government Structure
 
 ### Executive Branch
+
 - **Mayor**: Chief executive officer of the municipality
 - **Vice Mayor**: Presiding officer of the Sangguniang Bayan and mayoral successor
 - **Municipal Departments**: Administrative offices implementing municipal programs
 
 ### Legislative Branch (Sangguniang Bayan)
+
 The Sangguniang Bayan is the legislative body of San Jose de Buenavista.
 
 ### Key Departments
+
 - **BPLO**: Business Permit and Licensing Office
 - **MTO**: Municipal Treasurer's Office
 - **Assessor's Office**: Property assessment and taxation
@@ -210,9 +227,11 @@ The Sangguniang Bayan is the legislative body of San Jose de Buenavista.
 ---
 
 ## Join the Grassroots Movement
+
 We are looking for passionate volunteers who want to make San Jose de Buenavista a better place. You don't need to be a developer to help!
 
 ### Development Workflow
+
 - Follow [Conventional Commits](https://www.conventionalcommits.org/) (enforced via commitlint)
 - All PRs run ESLint and Prettier automatically
 
@@ -223,6 +242,7 @@ We are looking for passionate volunteers who want to make San Jose de Buenavista
 ### Production Deployment (BetterSJ)
 
 BetterSJ is deployed on **Cloudflare Pages** with:
+
 - **Frontend**: Vite build automatically deployed on push to `main` branch
 - **Backend**: Cloudflare Pages Functions for API endpoints
 - **Database**: Cloudflare D1 (`bettersj_openlgu`) for legislative data
@@ -232,10 +252,13 @@ BetterSJ is deployed on **Cloudflare Pages** with:
 ## License and Data Sources
 
 ### Code License
+
 This project is released under the [Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/) dedication.
 
 ### Data Attribution
+
 BetterSJ aggregates data from multiple sources:
+
 - **Municipality of San Jose de Buenavista**
 - **Philippine Government Procurement Portal (PhilGEPS)**
 - **Department of Budget and Management (DBM)**
@@ -245,6 +268,6 @@ BetterSJ aggregates data from multiple sources:
 
 ## 📞 Contact and Support
 
-- **Website**: https://bettersj.org
+- **Website**: [bettersj.org](https://bettersj.org)
 - **GitHub Repository**: [github.com/bonfire404/bettersanjose](https://github.com/bonfire404/bettersanjose)
 - **Developer**: Built by [Bonfire Base Studio](https://bonfire.base69.studio)
