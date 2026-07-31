@@ -30,7 +30,7 @@ export interface SEOProps {
 export function SEO({
   title,
   description,
-  ogImage = '/logos/png/betterlb-white.jpg',
+  ogImage = '/logos/png/bettersj-white.jpg',
   ogType = 'website',
   noIndex = false,
   keywords = [],

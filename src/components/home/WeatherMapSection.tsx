@@ -124,11 +124,40 @@ export default function WeatherMapSection() {
         maxZoom: 19,
       }).addTo(mapInstance);
 
-      // Add marker
-      const marker = L.marker([
-        config.location.coordinates.lat,
-        config.location.coordinates.lon,
-      ]).addTo(mapInstance);
+      // Add marker with custom pin icon
+      const customPin = L.divIcon({
+        className: 'custom-map-pin',
+        html: `<div style="
+          background-color: #059669;
+          width: 32px;
+          height: 32px;
+          border-radius: 50% 50% 50% 0;
+          transform: rotate(-45deg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2.5px solid #ffffff;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.35);
+        ">
+          <div style="
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff;
+            border-radius: 50%;
+          "></div>
+        </div>`,
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32],
+      });
+
+      const marker = L.marker(
+        [
+          config.location.coordinates.lat,
+          config.location.coordinates.lon,
+        ],
+        { icon: customPin }
+      ).addTo(mapInstance);
       const popupContent = document.createElement('div');
       popupContent.textContent = `${config.lgu.fullName} Municipal Hall`;
       const popupSub = document.createElement('div');

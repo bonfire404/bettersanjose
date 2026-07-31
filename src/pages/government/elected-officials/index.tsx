@@ -244,9 +244,9 @@ export default function ElectedOfficialsPage() {
     [allExecutive]
   );
 
-  const sbData = legislativeData.find(
-    item => item.slug === '12th-sangguniang-bayan'
-  );
+  const sbData =
+    legislativeData.find(item => item.slug.includes('sangguniang-bayan')) ||
+    legislativeData[0];
 
   const getChairedCommittees = (memberName: string): Committee[] =>
     (sbData?.permanent_committees ?? []).filter(

@@ -1,0 +1,32 @@
+name: Auto Fetch San Jose News (Every 6 Hours)
+
+on:
+  schedule:
+    # Run every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run San Jose News Crawler
+        run: |
+          python scripts/fetch_news.py
+
+      - name: Commit and push updated news data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chrono: auto-update San Jose 24h news feed [skip ci]"
+          file_pattern: "src/data/news.json"

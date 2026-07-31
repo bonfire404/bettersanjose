@@ -4234,7 +4234,7 @@
     "slug": "international-rice-research-institute",
     "email": "imi@cgiar.org",
     "website": "www.irri.org",
-    "address": "UP College, Los Baños, 4031 Laguna",
+    "address": "UP College, San Jose de Buenavista, 4031 Antique",
     "contact": "[REDACTED]",
     "type": "diplomatic",
     "parent_department": null
@@ -4340,8 +4340,8 @@
     "parent_department": null
   },
   {
-    "name": "LAGUNA LAKE DEVELOPMENT AUTHORITY",
-    "slug": "laguna-lake-development-authority",
+    "name": "ANTIQUE LAKE DEVELOPMENT AUTHORITY",
+    "slug": "antique-lake-development-authority",
     "email": "info@llda.gov.ph",
     "website": "llda.gov.ph",
     "address": "LLADA Bldg., National Ecology Center, East Avenue Diliman, Quezon City",
@@ -4350,11 +4350,11 @@
     "parent_department": null
   },
   {
-    "name": "LAGUNA STATE POLYTECHNIC UNIVERSITY",
-    "slug": "laguna-state-polytechnic-university",
+    "name": "ANTIQUE STATE POLYTECHNIC UNIVERSITY",
+    "slug": "antique-state-polytechnic-university",
     "email": "info@lspu.edu.ph",
     "website": "lspu.edu.ph",
-    "address": "Los Baños, Laguna",
+    "address": "San Jose de Buenavista, Antique",
     "contact": null,
     "type": "constitutional",
     "parent_department": null
@@ -5824,7 +5824,7 @@
     "slug": "philippine-high-school-for-the-arts",
     "email": "directors.office@phsa.edu.ph",
     "website": "www.phsa.edu.ph",
-    "address": "National Arts Center, Mt. Makiling College 4031 Los Baños, Laguna",
+    "address": "National Arts Center, Mt. Makiling College 4031 San Jose de Buenavista, Antique",
     "contact": "[REDACTED]",
     "type": "attached-agencies",
     "parent_department": "DEPARTMENT OF EDUCATION"

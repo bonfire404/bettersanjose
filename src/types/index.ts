@@ -116,14 +116,15 @@ export interface Service {
 }
 
 export interface HourlyForecast {
-  dt: number;
-  temp: number;
-  feels_like: number;
+  dt?: number;
+  temp?: number;
+  feels_like?: number;
   icon: string;
-  description: string;
-  humidity: number;
-  wind_speed: number;
+  description?: string;
+  humidity?: number;
+  wind_speed?: number;
   hour?: string;
+  temperature?: number;
 }
 
 export interface WeatherData {
@@ -147,11 +148,19 @@ export interface ForexData {
 }
 
 export interface NewsItem {
+  id?: string;
   title: string;
   summary: string;
   url: string;
   publishedAt: string;
   source: string;
+  excerpt?: string;
+  content?: string;
+  date?: string;
+  category?: string;
+  imageUrl?: string;
+  municipality?: string;
+  sourceUrl?: string;
 }
 
 export interface BlogPost {

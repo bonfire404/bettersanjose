@@ -23,7 +23,7 @@ export default function BarangaysIndex() {
     <>
       <PageHero
         title='Local Barangays'
-        description={`${filtered.length} component barangays of the Municipality of Los Baños.`}
+        description={`${filtered.length} component barangays of the Municipality of San Jose de Buenavista.`}
       >
         <SearchInput
           value={search}

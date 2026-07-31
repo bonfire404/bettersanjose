@@ -37,7 +37,7 @@ export default function GovernmentRootLayout() {
       title: t('government.barangaysTitle', 'Barangays'),
       description: t(
         'government.barangaysDescription',
-        'The 14 local component units of Los Baños.'
+        'The 14 local component units of San Jose de Buenavista.'
       ),
       icon: HomeIcon,
       path: '/government/barangays',
@@ -51,7 +51,7 @@ export default function GovernmentRootLayout() {
       <PageHeader
         variant='centered'
         title='Government'
-        description='Access information on elected leaders, municipal departments, and the 14 component barangays of Los Baños.'
+        description='Access information on elected leaders, municipal departments, and the 14 component barangays of San Jose de Buenavista.'
       />
 
       <SectionBlock className='pb-kapwa-xs md:pb-kapwa-sm'>

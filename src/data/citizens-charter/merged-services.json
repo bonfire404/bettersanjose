@@ -163,7 +163,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños",
+    "whoMayAvail": "All residents of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -412,7 +412,7 @@
         "instruction": "Additional requirements that may apply based on your situation:",
         "options": [
           {
-            "condition": "Required if head office is outside Los Baños",
+            "condition": "Required if head office is outside San Jose de Buenavista",
             "document": "Photocopy of Corporate Community Tax Certificate",
             "where_to_secure": "Business Owner",
             "copies": null,
@@ -596,7 +596,7 @@
         "instruction": "Additional requirements that may apply based on your situation:",
         "options": [
           {
-            "condition": "Required if head office is outside Los Baños",
+            "condition": "Required if head office is outside San Jose de Buenavista",
             "document": "Photocopy of Corporate Community Tax Certificate",
             "where_to_secure": "Business Owner",
             "copies": null,
@@ -708,7 +708,7 @@
         "instruction": "Additional requirements that may apply based on your situation:",
         "options": [
           {
-            "condition": "Required if head office is outside Los Baños",
+            "condition": "Required if head office is outside San Jose de Buenavista",
             "document": "Photocopy of Corporate Community Tax Certificate",
             "where_to_secure": "Business Owner",
             "copies": null,
@@ -839,7 +839,7 @@
         "instruction": "Additional requirements that may apply based on your situation:",
         "options": [
           {
-            "condition": "Required if head office is outside Los Baños",
+            "condition": "Required if head office is outside San Jose de Buenavista",
             "document": "Photocopy of Corporate Community Tax Certificate",
             "where_to_secure": "Business Owner",
             "copies": null,
@@ -1567,7 +1567,7 @@
         "url": "https://ncsc.gov.ph"
       },
       {
-        "name": "Office of the Senior Citizens Affairs (OSCA) Los Baños"
+        "name": "Office of the Senior Citizens Affairs (OSCA) San Jose de Buenavista"
       }
     ],
     "source": "community"
@@ -1652,7 +1652,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños and associations/organizations",
+    "whoMayAvail": "All residents of San Jose de Buenavista and associations/organizations",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -1692,7 +1692,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños",
+    "whoMayAvail": "All residents of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "supportingDocumentsDetail": {
@@ -1866,7 +1866,7 @@
     },
     "classification": "Complex",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "Prospective house and/or building owners within the jurisdiction of Los Baños",
+    "whoMayAvail": "Prospective house and/or building owners within the jurisdiction of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2037,7 +2037,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "Prospective house and/or building owners within the jurisdiction of Los Baños",
+    "whoMayAvail": "Prospective house and/or building owners within the jurisdiction of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2198,7 +2198,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2B",
-    "whoMayAvail": "Business Establishment Owners within the jurisdiction of Los Baños",
+    "whoMayAvail": "Business Establishment Owners within the jurisdiction of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2257,7 +2257,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "Electrical Service Provider Applicant within the jurisdiction of Los Baños",
+    "whoMayAvail": "Electrical Service Provider Applicant within the jurisdiction of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2345,7 +2345,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "House and/or building owners within the jurisdiction of Los Baños",
+    "whoMayAvail": "House and/or building owners within the jurisdiction of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2385,7 +2385,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "House and/or building owners within the jurisdiction of Los Baños",
+    "whoMayAvail": "House and/or building owners within the jurisdiction of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2570,7 +2570,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All Los Baños residents, Business Owners",
+    "whoMayAvail": "All San Jose de Buenavista residents, Business Owners",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -3349,7 +3349,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños",
+    "whoMayAvail": "All residents of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -3516,7 +3516,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños",
+    "whoMayAvail": "All residents of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -3789,7 +3789,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños",
+    "whoMayAvail": "All residents of San Jose de Buenavista",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -3834,11 +3834,11 @@
       "slug": "education-scholarship"
     },
     "steps": [
-      "Los Baños Central Elementary School (Timugan)",
+      "San Jose de Buenavista Central Elementary School (Timugan)",
       "Mayondon Elementary School",
       "Bayog Elementary School",
       "Lalakay Elementary School",
-      "Los Baños National High School (Poblacion)",
+      "San Jose de Buenavista National High School (Poblacion)",
       "Bernardo F. San Juan National High School",
       "South Hill School (Private)",
       "University of the Philippines Rural High School"

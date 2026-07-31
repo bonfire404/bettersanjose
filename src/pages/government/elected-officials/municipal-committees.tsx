@@ -27,9 +27,9 @@ interface Committee {
 export default function MunicipalCommitteesPage() {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const sbData = legislativeData.find(
-    item => item.slug === '12th-sangguniang-bayan'
-  );
+  const sbData =
+    legislativeData.find(item => item.slug.includes('sangguniang-bayan')) ||
+    legislativeData[0];
 
   const committees = useMemo(
     () => (sbData?.permanent_committees ?? []) as Committee[],
@@ -60,7 +60,7 @@ export default function MunicipalCommitteesPage() {
             href: '/government/elected-officials/committees',
           },
         ]}
-        heroActions={
+        metadata={
           <SearchInput
             value={searchTerm}
             onChangeValue={setSearchTerm}

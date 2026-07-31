@@ -51,8 +51,21 @@
   padding: 8px !important;
 }
 
-/* --- ANIMATIONS --- */
+/* --- SAN JOSE DE BUENAVISTA GREEN THEME OVERRIDES & ANIMATIONS --- */
 @theme {
+  /* Official San Jose de Buenavista Emerald/Forest Green Brand Tokens */
+  --color-kapwa-brand-50: #ecfdf5;
+  --color-kapwa-brand-100: #d1fae5;
+  --color-kapwa-brand-200: #a7f3d0;
+  --color-kapwa-brand-300: #6ee7b7;
+  --color-kapwa-brand-400: #34d399;
+  --color-kapwa-brand-500: #10b981;
+  --color-kapwa-brand-600: #059669;
+  --color-kapwa-brand-700: #047857;
+  --color-kapwa-brand-800: #065f46;
+  --color-kapwa-brand-900: #064e3b;
+  --color-kapwa-brand-950: #022c22;
+
   @keyframes marquee {
     0% {
       transform: translateX(100%);

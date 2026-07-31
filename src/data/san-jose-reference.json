@@ -1,0 +1,20 @@
+{
+  "municipality": "San Jose de Buenavista",
+  "officialName": "Municipality of San Jose de Buenavista",
+  "province": "Antique",
+  "region": "Western Visayas (Region VI)",
+  "islandGroup": "Visayas",
+  "country": "Philippines",
+  "philatlasUrl": "https://www.philatlas.com/visayas/r06/antique/san-jose-de-buenavista.html",
+  "barangayCount": 28,
+  "census2020Population": 65140,
+  "landAreaSqKm": 48.56,
+  "shareOfProvinceLandAreaPercent": 1.78,
+  "incomeClass": "1st Class Municipality",
+  "postalCode": "5700",
+  "coordinates": {
+    "latitude": 10.7456,
+    "longitude": 121.9422
+  },
+  "notes": "Verified against official PhilAtlas & PSA 2020 Census statistics."
+}

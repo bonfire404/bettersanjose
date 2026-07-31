@@ -9,25 +9,33 @@ import { fetchWithCache } from './api';
 export const fetchForexData = async (
   filterSymbols?: string[]
 ): Promise<ForexRate[]> => {
-  const data = await fetchWithCache('https://api.bettergov.ph/forex');
+  try {
+    const data = await fetchWithCache('https://api.bettergov.ph/forex');
 
-  // Transform API data to match our ForexRate type
-  let transformedData: ForexRate[] = data.rates.map(
-    (rate: { country: string; symbol: string; phpEquivalent: number }) => ({
-      currency: rate.country,
-      code: rate.symbol,
-      rate: rate.phpEquivalent,
-    })
-  );
-
-  // Filter by symbols if provided
-  if (filterSymbols && filterSymbols.length > 0) {
-    transformedData = transformedData.filter(rate =>
-      filterSymbols.includes(rate.code)
+    let transformedData: ForexRate[] = data.rates.map(
+      (rate: { country: string; symbol: string; phpEquivalent: number }) => ({
+        currency: rate.country,
+        code: rate.symbol,
+        rate: rate.phpEquivalent,
+      })
     );
-  }
 
-  return transformedData;
+    if (filterSymbols && filterSymbols.length > 0) {
+      transformedData = transformedData.filter(rate =>
+        filterSymbols.includes(rate.code)
+      );
+    }
+
+    return transformedData;
+  } catch (err) {
+    console.warn('Forex API unavailable, using fallback data:', err);
+    return [
+      { currency: 'US Dollar', code: 'USD', rate: 58.5 },
+      { currency: 'Euro', code: 'EUR', rate: 63.2 },
+      { currency: 'Japanese Yen', code: 'JPY', rate: 0.38 },
+      { currency: 'British Pound', code: 'GBP', rate: 74.1 },
+    ];
+  }
 };
 
 /**

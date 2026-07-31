@@ -167,7 +167,7 @@ export const footerNavigation = {
   socialLinks: [
     {
       label: 'Facebook',
-      href: 'https://facebook.com/betterlb.org',
+      href: 'https://facebook.com/bettersj.org',
       target: '_blank',
     },
     {
@@ -177,7 +177,7 @@ export const footerNavigation = {
     },
     {
       label: 'GitHub',
-      href: 'https://github.com/BetterLosBanos/betterlb',
+      href: 'https://github.com/BetterLosBanos/bettersj',
       target: '_blank',
     },
   ],

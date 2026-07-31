@@ -81,7 +81,7 @@ const SitemapPage: FC = () => {
         },
         {
           title: 'Hotlines',
-          url: 'https://hotlines.bettergov.ph/?city=los%20baños&province=laguna',
+          url: 'https://hotlines.bettergov.ph/?city=los%20baños&province=antique',
           description: 'Emergency and important contact numbers',
         },
       ],

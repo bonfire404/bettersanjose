@@ -106,91 +106,96 @@ const Hero: FC = () => {
   ];
 
   return (
-    <div className='py-12 from-kapwa-brand-600 to-kapwa-brand-700 bg-linear-to-r text-kapwa-text-inverse md:py-24'>
-      <div className='container px-4 mx-auto'>
-        <div className='grid grid-cols-1 gap-8 items-center lg:grid-cols-2'>
-          {/* Left section: title + search + quick categories */}
-          <div className='animate-fade-in'>
-            <h1 className='mb-4 text-kapwa-text-inverse kapwa-heading-xl'>
-              {t('hero.title')}
-            </h1>
-            <p className='mb-8 max-w-lg opacity-80 text-kapwa-text-inverse kapwa-body-md-default'>
-              {t('hero.subtitle')}
-            </p>
+    <div className='relative overflow-hidden py-12 text-kapwa-text-inverse bg-emerald-950 md:py-24'>
+      {/* Background Municipal Hall Photo Backdrop (High Visibility) */}
+      <div
+        className='absolute inset-0 bg-cover bg-center bg-no-repeat opacity-65'
+        style={{ backgroundImage: "url('/logos/sj_municipal.jpg')" }}
+      />
+      {/* Soft Emerald Gradient Tint Overlay for contrast */}
+      <div className='absolute inset-0 bg-gradient-to-r from-emerald-950/75 via-emerald-900/50 to-emerald-950/75' />
 
-            {/* Search input */}
-            <div className='mb-4'>
-              <SearchInput
-                value={query}
-                onChangeValue={setQuery}
-                placeholder={'Search services...'}
-                className='bg-kapwa-bg-surface/80'
-              />
-            </div>
+      <div className='container relative z-10 px-4 mx-auto'>
+        <div className='max-w-4xl animate-fade-in'>
+          <h1 className='mb-4 text-kapwa-text-inverse kapwa-heading-xl'>
+            {t('hero.title')}
+          </h1>
+          <p className='mb-8 max-w-xl opacity-80 text-kapwa-text-inverse kapwa-body-md-default'>
+            {t('hero.subtitle')}
+          </p>
 
-            {/* Top 5 search results */}
-            {query && results.length > 0 && (
-              <div className='overflow-y-auto max-h-80 rounded-lg shadow-md bg-kapwa-bg-surface/90 text-kapwa-text-strong'>
-                {results.slice(0, 5).map(hit => (
-                  <Link
-                    key={hit.slug}
-                    to={`/services/${hit.slug}`}
-                    className='block p-3 border-b hover:bg-kapwa-bg-hover last:border-none'
-                  >
-                    <strong>
-                      {hit.service || hit.office_name || hit.office}
-                    </strong>
-                    {hit.description && (
-                      <p className='text-kapwa-text-support kapwa-body-sm-default'>
-                        {hit.description}
-                      </p>
-                    )}
-                  </Link>
-                ))}
-              </div>
-            )}
+          {/* Search input */}
+          <div className='mb-4 max-w-2xl'>
+            <SearchInput
+              value={query}
+              onChangeValue={setQuery}
+              placeholder={'Search services...'}
+              className='bg-kapwa-bg-surface/80'
+            />
+          </div>
 
-            {/* Random services - using plain language titles */}
-            <div className='flex flex-wrap gap-2 mt-4'>
-              {randomServices.map(service => (
-                <Link key={service.slug} to={`/services/${service.slug}`}>
-                  <Badge
-                    variant='outline'
-                    className='cursor-pointer border-white/20 text-kapwa-text-inverse hover:bg-kapwa-bg-surface/20'
-                  >
-                    <FileTextIcon className='w-4 h-4' />
-                    <span className='ml-1'>
-                      {service.plainLanguageName || service.service}
-                    </span>
-                  </Badge>
+          {/* Top 5 search results */}
+          {query && results.length > 0 && (
+            <div className='overflow-y-auto max-h-80 max-w-2xl rounded-lg shadow-md bg-kapwa-bg-surface/90 text-kapwa-text-strong mb-4'>
+              {results.slice(0, 5).map(hit => (
+                <Link
+                  key={hit.slug}
+                  to={`/services/${hit.slug}`}
+                  className='block p-3 border-b hover:bg-kapwa-bg-hover last:border-none'
+                >
+                  <strong>
+                    {hit.service || hit.office_name || hit.office}
+                  </strong>
+                  {hit.description && (
+                    <p className='text-kapwa-text-support kapwa-body-sm-default'>
+                      {hit.description}
+                    </p>
+                  )}
                 </Link>
               ))}
             </div>
+          )}
+
+          {/* Random services - using plain language titles */}
+          <div className='flex flex-wrap gap-2 mt-4'>
+            {randomServices.map(service => (
+              <Link key={service.slug} to={`/services/${service.slug}`}>
+                <Badge
+                  variant='outline'
+                  className='cursor-pointer border-white/20 text-kapwa-text-inverse hover:bg-kapwa-bg-surface/20'
+                >
+                  <FileTextIcon className='w-4 h-4' />
+                  <span className='ml-1'>
+                    {service.plainLanguageName || service.service}
+                  </span>
+                </Badge>
+              </Link>
+            ))}
           </div>
 
-          {/* Right section: quick access to key sections */}
-          <div className='p-6 rounded-xl shadow-lg backdrop-blur-sm animate-slide-in bg-kapwa-bg-surface/10'>
-            <h2 className='mb-4 text-kapwa-text-inverse kapwa-heading-lg'>
+          {/* Minimalist Quick Access section directly below random services */}
+          <div className='mt-8 pt-6 border-t border-white/15'>
+            <h2 className='mb-3 text-xs font-bold uppercase tracking-wider text-white/70'>
               {t('hero.quickAccess')}
             </h2>
-            <div className='grid grid-cols-2 gap-4'>
+            <div className='grid grid-cols-2 gap-3 sm:grid-cols-4'>
               {quickAccessCards.map(card => (
                 <Link
                   key={card.to}
                   to={card.to}
-                  className='flex flex-col items-center p-4 text-center rounded-lg transition-all duration-200 bg-kapwa-bg-surface/10 hover:bg-kapwa-bg-surface/20'
+                  className='group flex items-center gap-2.5 p-2 rounded-lg transition-colors hover:bg-white/10'
                 >
-                  <div className='p-3 mb-3 rounded-full bg-kapwa-brand-500'>
-                    <div className='w-6 h-6 text-kapwa-text-inverse'>
-                      {card.icon}
+                  <div className='text-white group-hover:text-kapwa-brand-400 transition-colors shrink-0'>
+                    {card.icon}
+                  </div>
+                  <div className='min-w-0'>
+                    <div className='text-xs font-bold text-white group-hover:text-white truncate'>
+                      {card.title}
+                    </div>
+                    <div className='text-[10px] text-white/60 truncate'>
+                      {card.description}
                     </div>
                   </div>
-                  <span className='text-kapwa-text-inverse kapwa-body-md-strong'>
-                    {card.title}
-                  </span>
-                  <span className='text-kapwa-text-inverse/70 kapwa-body-sm-default'>
-                    {card.description}
-                  </span>
                 </Link>
               ))}
             </div>

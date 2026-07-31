@@ -44,7 +44,7 @@ export function BarangayHeader({ barangay }: BarangayHeaderProps) {
       {/* Middle: Address */}
       {barangay.address && (
         <p className='text-kapwa-text-support mb-4 text-sm'>
-          {barangay.address}, Los Baños, Laguna
+          {barangay.address}, San Jose de Buenavista, Antique
         </p>
       )}
 

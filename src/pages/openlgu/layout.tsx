@@ -61,7 +61,7 @@ export default function OpenLGULayout() {
           <PageHeader
             variant='hero'
             title='OpenLGU Portal'
-            description='Browse official local ordinances, resolutions, and executive orders of Los Baños.'
+            description='Browse official local ordinances, resolutions, and executive orders of San Jose de Buenavista.'
             actions={
               <SearchInput
                 placeholder='Search by title, number, or author...'

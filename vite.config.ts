@@ -15,6 +15,13 @@ export default defineConfig({
         find: '@',
         replacement: path.resolve(__dirname, 'src'),
       },
+      {
+        find: '@icons-pack/react-simple-icons',
+        replacement: path.resolve(
+          __dirname,
+          'node_modules/@icons-pack/react-simple-icons/index.cjs'
+        ),
+      },
     ],
   },
   server: {

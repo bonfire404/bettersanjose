@@ -1,45 +1,45 @@
 {
   "lgu": {
-    "name": "Los Baños",
-    "fullName": "Municipality of Los Baños",
-    "province": "Laguna",
-    "districtEngineeringOffice": "Laguna 2nd DEO",
-    "region": "Region IV-A",
-    "regionCode": "CALABARZON",
+    "name": "San Jose",
+    "fullName": "Municipality of San Jose de Buenavista",
+    "province": "Antique",
+    "districtEngineeringOffice": "Antique DEO",
+    "region": "Region VI",
+    "regionCode": "WESTERN VISAYAS",
     "type": "municipality",
-    "logoPath": "/logos/png/betterlb-blue.png",
-    "officialWebsite": "https://losbanos.gov.ph",
-    "provinceWebsite": "https://laguna.gov.ph"
+    "logoPath": "/logos/png/BetterSJ_logo_dark.png",
+    "officialWebsite": "https://sanjosedebuenavista.gov.ph",
+    "provinceWebsite": "https://antique.gov.ph"
   },
   "portal": {
-    "name": "BetterLB",
-    "domain": "betterlb.org",
-    "baseUrl": "https://betterlb.org",
-    "tagline": "Community Powered Los Baños Portal",
-    "description": "Community-powered portal of the Municipality of Los Baños.",
-    "brandColor": "#0066eb",
+    "name": "BetterSJ",
+    "domain": "bettersj.org",
+    "baseUrl": "https://bettersj.org",
+    "tagline": "Community Powered San Jose, Antique Portal",
+    "description": "Community-powered portal of the Municipality of San Jose, Province of Antique.",
+    "brandColor": "#059669",
     "navbarTagline": "A Community-run portal for",
-    "footerBrandName": "Better Los Baños",
+    "footerBrandName": "Better San Jose",
     "footerTagline": "Community Civic Portal",
-    "logoWhitePath": "/logos/webp/betterlb-white-outline.webp"
+    "logoWhitePath": "/logos/png/BetterSJ_logo_dark.png"
   },
   "location": {
     "coordinates": {
-      "lat": 14.1763,
-      "lon": 121.2219
+      "lat": 10.74679,
+      "lon": 121.94148
     },
     "weather": {
-      "defaultCity": "Los Baños"
+      "defaultCity": "San Jose"
     }
   },
   "transparency": {
     "procurement": {
-      "organizationName": "MUNICIPALITY OF LOS BAÑOS, LAGUNA",
+      "organizationName": "MUNICIPALITY OF SAN JOSE, ANTIQUE",
       "externalDashboard": "https://transparency.bettergov.ph/organizations/"
     },
     "infrastructure": {
-      "searchString": "Los Baños",
-      "exactMatchTargets": ["los baños", "los banos"]
+      "searchString": "San Jose",
+      "exactMatchTargets": ["san jose", "san jose de buenavista", "antique"]
     }
   },
   "dataPaths": {
